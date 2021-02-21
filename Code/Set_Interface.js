@@ -1,3 +1,5 @@
+/*
+
 // Make Scrolling Work on Ipad 
 var style = document.createElement("style"); 
 style.innerHTML = "body {-webkit-overflow-scrolling: touch;}"
@@ -34,6 +36,10 @@ if( document.getElementById("terminado-container") != null ){
     document.getElementById("header").style.display = "none"
     //document.getElementsByClassName("terminado-container-container")[0].style.paddingTop = "0px"
 }
+
+
+*/
+
 
 // Change Notebook View
 if( document.getElementById("notebook-container") != null ){
@@ -98,7 +104,7 @@ if( document.getElementById("notebook-container") != null ){
     head.appendChild(style_notebook);
 }
 
-
+/*
 // create "web view" button for notebooks
 if( $(IPython.toolbar.selector.concat(' > #web-view')).length == 0 ){
   IPython.toolbar.add_buttons_group([
@@ -140,3 +146,4 @@ if($(IPython.toolbar.selector.concat(' > #clean-view')).length == 0){
     // makes it look pretty
     document.getElementById("clean-view").getElementsByClassName("btn btn-default")[0].className="btn btn-danger"
 } 
+*/
