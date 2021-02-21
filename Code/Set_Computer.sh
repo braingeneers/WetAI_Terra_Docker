@@ -11,7 +11,7 @@ sed -i "s/{VERSION_NAME}/$VERSION_NAME/g"  ~/WetAI_Terra_Docker/Code/Set_Interfa
 sed -i '$d' ~/.jupyter/custom/custom.js
 echo "  require(['custom/Set_Interface']);" >> ~/.jupyter/custom/custom.js
 echo "});" >> ~/.jupyter/custom/custom.js
- mv ~/WetAI_Terra_Docker/Code/Set_Interface.js ~/.jupyter/custom/
+mv ~/WetAI_Terra_Docker/Code/Set_Interface.js ~/.jupyter/custom/
 
 
 
