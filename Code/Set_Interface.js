@@ -44,6 +44,7 @@ if( document.getElementById("terminado-container") != null ){
 // Change Notebook View
 if( document.getElementById("notebook-container") != null ){
     // *** Add Keyboard Commands for iPad ***
+    /*
     // Movement between Cells
     Jupyter.keyboard_manager.command_shortcuts.add_shortcut('-', 'jupyter-notebook:select-previous-cell');
     Jupyter.keyboard_manager.command_shortcuts.add_shortcut('=', 'jupyter-notebook:select-next-cell');
@@ -58,7 +59,7 @@ if( document.getElementById("notebook-container") != null ){
     Jupyter.keyboard_manager.command_shortcuts.add_shortcut('shift-[', 'collapsible_headings:collapse_all_headings');
     // SKETCHY ONE // Entre command mode
     Jupyter.keyboard_manager.edit_shortcuts.add_shortcut('shift-backspace', 'jupyter-notebook:enter-command-mode');
-    
+    */
     
     // *** Change the Style of the notebook ***
     // Code is copied from here: https://stackoverflow.com/questions/524696/how-to-create-a-style-tag-with-javascript
