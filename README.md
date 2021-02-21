@@ -10,5 +10,5 @@ This is the version of WetAI that runs on Terra. This project is still in develo
 ## Docker Commands
 **Run Command**
 ```
-docker run -it -p 8000:8000 --name terra-test --entrypoint /bin/bash us.gcr.io/broad-dsp-gcr-public/terra-jupyter-python:0.0.23
+docker run -it -p 8001:8000 --name terra-test  --user root --entrypoint /bin/bash braingeneers/wetai:v3.0.0
 ```
