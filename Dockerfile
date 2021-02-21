@@ -13,8 +13,8 @@ FROM us.gcr.io/broad-dsp-gcr-public/terra-jupyter-python:0.0.23
 #ENV AWS_LOG_LEVEL=3
 #ENV TF_CPP_MIN_LOG_LEVEL=3
 
-#RUN git clone https://github.com/braingeneers/WetAI_Docker.git
-#RUN cd ~/WetAI_Docker/Code && chmod +x Set_Computer.sh && ./Set_Computer.sh
+RUN git clone https://github.com/braingeneers/WetAI_Terra_Docker.git
+RUN cd ~/WetAI_Terra_Docker/Code && chmod +x Set_Computer.sh && ./Set_Computer.sh
 
 #EXPOSE 80
 #EXPOSE 8888
