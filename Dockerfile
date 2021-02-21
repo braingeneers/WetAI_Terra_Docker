@@ -4,7 +4,7 @@ FROM us.gcr.io/broad-dsp-gcr-public/terra-jupyter-python:0.0.23
 
 # Last Used image: jupyter/tensorflow-notebook:feacdbfc2e89
 
-#USER root
+USER root
 #WORKDIR /home/jovyan
 
 # David's Code (Check if necessary)
