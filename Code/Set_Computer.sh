@@ -14,6 +14,9 @@ echo "});" >> ~/.jupyter/custom/custom.js
 mv ~/WetAI_Terra_Docker/Code/Set_Interface.js ~/.jupyter/custom/
 
 
+# Allow root access
+echo "c.NotebookApp.allow_root = True" >> ~/.jupyter/jupyter_notebook_config.py  
+
 
 #pip install plotly
 
