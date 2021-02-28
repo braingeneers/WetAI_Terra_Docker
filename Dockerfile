@@ -22,6 +22,7 @@ USER root
 #!!! Dockerfile reference: https://github.com/jupyter/docker-stacks/blob/master/base-notebook/Dockerfile
 
 #!!! Goal: Install Conda
+#!!! Note: Terra said they installed Conda, but they didn't: https://github.com/DataBiosphere/terra-docker/tree/master/terra-jupyter-base
 
 ARG NB_USER="jupyter-user"
 ENV UID 1000
