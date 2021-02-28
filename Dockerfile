@@ -16,10 +16,12 @@ USER root
 #############################################################
 
 ###########################
-#.  Jupyter Notebook
+#.  Jupyter base-notebook
 ###########################
 
-#!!! Install Conda
+#!!! Dockerfile reference: https://github.com/jupyter/docker-stacks/blob/master/base-notebook/Dockerfile
+
+#!!! Goal: Install Conda
 
 ARG NB_USER="jupyter-user"
 
