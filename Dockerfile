@@ -7,6 +7,62 @@ FROM us.gcr.io/broad-dsp-gcr-public/terra-jupyter-python:0.0.23
 USER root
 #WORKDIR /home/jovyan
 
+
+
+#############################################################
+#############################################################
+#.              Code From Jupyter Dockerfiles
+#############################################################
+#############################################################
+
+###########################
+#.  Jupyter Notebook
+###########################
+
+#!!! Install Conda
+
+ARG NB_USER="jupyter-user"
+
+# ---- Miniforge installer ----
+# Default values can be overridden at build time
+# (ARGS are in lower case to distinguish them from ENV)
+# Check https://github.com/conda-forge/miniforge/releases
+# Conda version
+ARG conda_version="4.9.2"
+# Miniforge installer patch version
+ARG miniforge_patch_number="7"
+# Miniforge installer architecture
+ARG miniforge_arch="x86_64"
+# Package Manager and Python implementation to use (https://github.com/conda-forge/miniforge)
+# - conda only: either Miniforge3 to use Python or Miniforge-pypy3 to use PyPy
+# - conda + mamba: either Mambaforge to use Python or Mambaforge-pypy3 to use PyPy
+ARG miniforge_python="Mambaforge"
+
+# Miniforge archive to install
+ARG miniforge_version="${conda_version}-${miniforge_patch_number}"
+# Miniforge installer
+ARG miniforge_installer="${miniforge_python}-${miniforge_version}-Linux-${miniforge_arch}.sh"
+# Miniforge checksum
+ARG miniforge_checksum="5a827a62d98ba2217796a9dc7673380257ed7c161017565fba8ce785fb21a599"
+
+
+
+
+
+
+
+
+
+
+#############################################################
+#############################################################
+#.                        My Code
+#############################################################
+#############################################################
+
+
+
+
 # David's Code (Check if necessary)
 ENV ENDPOINT_URL="https://s3.nautilus.optiputer.net"
 ENV S3_ENDPOINT="s3.nautilus.optiputer.net"
