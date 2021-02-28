@@ -34,7 +34,8 @@ conda update -y conda
 
 
 
-
+### Install nb-extensiosn 
+conda install -y -c conda-forge  rise
 
 
 
