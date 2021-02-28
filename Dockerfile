@@ -61,7 +61,7 @@ RUN wget --quiet "https://github.com/conda-forge/miniforge/releases/download/${m
     /bin/bash "${miniforge_installer}" -f -b -p $CONDA_DIR && \
     rm "${miniforge_installer}"
 
-
+RUN conda update --all --quiet --yes 
 
 
 
