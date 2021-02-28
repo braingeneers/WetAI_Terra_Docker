@@ -18,6 +18,18 @@ mv ~/WetAI_Terra_Docker/Code/Set_Interface.js ~/.jupyter/custom/
 echo "c.NotebookApp.allow_root = True" >> ~/.jupyter/jupyter_notebook_config.py  
 
 
+######################
+######################
+# Old Code
+######################
+######################
+
+
+### Generic Software Update
+apt update
+apt-get install update
+conda update -y conda
+
 #pip install plotly
 
 
