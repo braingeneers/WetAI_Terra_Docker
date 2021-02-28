@@ -36,7 +36,22 @@ conda update -y conda
 
 ### Install nb-extensiosn 
 conda install -y -c conda-forge  rise
-
+jupyter nbextensions_configurator enable
+jupyter nbextension enable collapsible_headings/main
+jupyter nbextension enable help_panel/help_panel
+jupyter nbextension enable notify/notify
+jupyter nbextension enable toc2/main
+#jupyter nbextension enable varInspector/main # Cool but removes \tab autocomplete
+jupyter nbextension enable codefolding/main
+jupyter nbextension enable hide_header/main
+jupyter nbextension enable hide_input_all/main
+jupyter nbextension enable table_beautifier/main
+jupyter nbextension enable codefolding/edit
+jupyter nbextension enable contrib_nbextensions_help_item/main
+jupyter nbextension enable python-markdown/main
+jupyter nbextension enable move_selected_cells/main
+jupyter nbextension enable splitcell/splitcell
+jupyter nbextension enable tree-filter/index
 
 
 
