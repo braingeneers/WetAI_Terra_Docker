@@ -56,8 +56,10 @@ ENV PATH=$CONDA_DIR/bin:$PATH
 # Install conda as jovyan and check the sha256 sum provided on the download site
 WORKDIR /tmp
 
-
-
+RUN wget --quiet "https://github.com/conda-forge/miniforge/releases/download/${miniforge_version}/${miniforge_installer}" && \
+    echo "${miniforge_checksum} *${miniforge_installer}" | sha256sum --check && \
+    /bin/bash "${miniforge_installer}" -f -b -p $CONDA_DIR && \
+    rm "${miniforge_installer}"
 
 
 
