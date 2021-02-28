@@ -24,6 +24,7 @@ USER root
 #!!! Goal: Install Conda
 
 ARG NB_USER="jupyter-user"
+ENV UID 1000
 
 # ---- Miniforge installer ----
 # Default values can be overridden at build time
