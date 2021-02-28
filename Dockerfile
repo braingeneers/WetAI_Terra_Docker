@@ -50,6 +50,7 @@ ARG miniforge_installer="${miniforge_python}-${miniforge_version}-Linux-${minifo
 ARG miniforge_checksum="5a827a62d98ba2217796a9dc7673380257ed7c161017565fba8ce785fb21a599"
 
 ENV CONDA_DIR=/opt/conda
+ENV CONDA_VERSION="${conda_version}"
 
 # Install conda as jovyan and check the sha256 sum provided on the download site
 WORKDIR /tmp
