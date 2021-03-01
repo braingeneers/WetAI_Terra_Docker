@@ -71,6 +71,9 @@ if( document.getElementById("notebook-container") != null ){
                  .container{margin:0;!important padding:0;!important} \
                  .container { width:100% !important;}  \
         \
+            /* For Terra WetAI - fix weird menubar margins */ \
+            div#menubar-container>div {width:100%} \
+        \
             /* Make Container Background white */ \
             #notebook-container { box-shadow: 0px 0px 0px 0px rgba(87, 87, 87, 0.2); } \
             div#notebook { background-color: White; } \
