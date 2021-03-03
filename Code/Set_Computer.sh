@@ -60,5 +60,29 @@ pip3 install redis
 
 
 
+############################################
+############################################
+#.    Braingeneers
+############################################
+############################################
+
+# Code used by all braingeneers
+conda install -y -c plotly plotly-orca
+apt-get install -y --no-install-recommends awscli # Install aws
+pip install --upgrade git+https://github.com/braingeneers/braingeneerspy.git # install braingeneers python package
+cd ~ && mkdir .aws # Setup for AWS credentials file
+touch ~/.aws/credentials
+pip install --upgrade nbstripout # used to clean up notebooks before committing them
+apt install -y  zip unzip # allows zipping files
+
+### Install Docker
+apt-get -y install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+apt-get update
+apt-get -y install docker-ce docker-ce-cli containerd.io
+#dockerd & #commented because command doesn't work here
+#service docker start # commented because command doesn't work
+
 
 
