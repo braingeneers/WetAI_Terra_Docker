@@ -59,9 +59,9 @@ WORKDIR /tmp
 RUN wget --quiet "https://github.com/conda-forge/miniforge/releases/download/${miniforge_version}/${miniforge_installer}" && \
     echo "${miniforge_checksum} *${miniforge_installer}" | sha256sum --check && \
     /bin/bash "${miniforge_installer}" -f -b -p $CONDA_DIR && \
-    rm "${miniforge_installer}"
-
-RUN conda update --all --quiet --yes 
+    rm "${miniforge_installer}" && \
+    conda list python | grep '^python ' | tr -s ' ' | cut -d '.' -f 1,2 | sed 's/$/.*/' >> $CONDA_DIR/conda-meta/pinned && \
+    conda update --all --quiet --yes 
 
 
 
