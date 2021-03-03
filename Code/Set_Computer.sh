@@ -44,11 +44,13 @@ pip3 install timeago #pip install --upgrade google-cloud-datastore #pip install 
 pip3 install redis
 
 # Set Files from wet_io Github
-#mkdir ~/.jupyter/custom && mv ~/WetAI_Docker/Code/Set_Interface.js ~/.jupyter/custom/custom.js 
+# Set custom.js file for WetAI javscript code
 sed -i '$d' ~/.jupyter/custom/custom.js
 echo "  require(['custom/Set_Interface']);" >> ~/.jupyter/custom/custom.js
 echo "});" >> ~/.jupyter/custom/custom.js
 mv ~/WetAI_Terra_Docker/Code/Set_Interface.js ~/.jupyter/custom/
+# Welcome to WetAI file
+mv ~/WetAI_Docker/Welcome\ to\ WetAI.ipynb ~/
 
 # Create user's starting Apps & Files by downloading everything from github
 
