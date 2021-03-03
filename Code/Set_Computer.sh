@@ -41,6 +41,20 @@ cd ~/Apps && mkdir  braingeneers
 cd ~/Apps/braingeneers && git clone https://github.com/braingeneers/Agora.git && git clone https://github.com/braingeneers/Learn_WetAI.git
 
 
+
+
+
+############################################
+############################################
+#.    Additional Installations for Terra
+############################################
+############################################
+
+# These packages were installed in WetAI by default, but must be installed in Terra version
+pip3 install plotly==4.14.3
+pip3 install pandas
+
+
 ############################################
 ############################################
 #.    Braingeneers
