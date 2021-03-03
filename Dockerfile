@@ -80,8 +80,11 @@ ENV S3_ENDPOINT="s3.nautilus.optiputer.net"
 ENV AWS_LOG_LEVEL=3
 ENV TF_CPP_MIN_LOG_LEVEL=3
 
+# Set Terra WetAI environment
 RUN git clone https://github.com/braingeneers/WetAI_Terra_Docker.git
 RUN cd ~/WetAI_Terra_Docker/Code && chmod +x Set_Computer.sh && ./Set_Computer.sh
+
+# Run each individual braingeneers code
 
 #EXPOSE 80
 #EXPOSE 8888
