@@ -11,28 +11,19 @@ sed -i "s/{VERSION_NAME}/$VERSION_NAME/g"  ~/WetAI_Terra_Docker/Code/Set_Interfa
 ############################################
 ############################################
 
-
-#mkdir ~/.jupyter/custom && mv ~/WetAI_Docker/Code/Set_Interface.js ~/.jupyter/custom/custom.js 
-sed -i '$d' ~/.jupyter/custom/custom.js
-echo "  require(['custom/Set_Interface']);" >> ~/.jupyter/custom/custom.js
-echo "});" >> ~/.jupyter/custom/custom.js
-mv ~/WetAI_Terra_Docker/Code/Set_Interface.js ~/.jupyter/custom/
-
-
-# Allow root access
+### Setup Jupyter config file
 echo "c.NotebookApp.allow_root = True" >> ~/.jupyter/jupyter_notebook_config.py  
-
-
-
 
 ### Generic Software Update
 apt update
 apt-get install update
 conda update -y conda
 
-#pip install plotly
-
-
+#mkdir ~/.jupyter/custom && mv ~/WetAI_Docker/Code/Set_Interface.js ~/.jupyter/custom/custom.js 
+sed -i '$d' ~/.jupyter/custom/custom.js
+echo "  require(['custom/Set_Interface']);" >> ~/.jupyter/custom/custom.js
+echo "});" >> ~/.jupyter/custom/custom.js
+mv ~/WetAI_Terra_Docker/Code/Set_Interface.js ~/.jupyter/custom/
 
 ### Install nb-extensiosn 
 #conda install -y -c conda-forge  rise.  # not visible dunno why
@@ -57,6 +48,10 @@ jupyter nbextension enable tree-filter/index
 pip3 install PyGithub
 pip3 install timeago #pip install --upgrade google-cloud-datastore #pip install --upgrade firebase-admin
 pip3 install redis
+
+# Set Files from wet_io Github
+
+# Create user's starting Apps & Files by downloading everything from github
 
 
 
