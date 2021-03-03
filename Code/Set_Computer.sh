@@ -19,12 +19,6 @@ apt update
 apt-get install update
 conda update -y conda
 
-#mkdir ~/.jupyter/custom && mv ~/WetAI_Docker/Code/Set_Interface.js ~/.jupyter/custom/custom.js 
-sed -i '$d' ~/.jupyter/custom/custom.js
-echo "  require(['custom/Set_Interface']);" >> ~/.jupyter/custom/custom.js
-echo "});" >> ~/.jupyter/custom/custom.js
-mv ~/WetAI_Terra_Docker/Code/Set_Interface.js ~/.jupyter/custom/
-
 ### Install nb-extensiosn 
 #conda install -y -c conda-forge  rise.  # not visible dunno why
 jupyter nbextensions_configurator enable
@@ -50,6 +44,11 @@ pip3 install timeago #pip install --upgrade google-cloud-datastore #pip install 
 pip3 install redis
 
 # Set Files from wet_io Github
+#mkdir ~/.jupyter/custom && mv ~/WetAI_Docker/Code/Set_Interface.js ~/.jupyter/custom/custom.js 
+sed -i '$d' ~/.jupyter/custom/custom.js
+echo "  require(['custom/Set_Interface']);" >> ~/.jupyter/custom/custom.js
+echo "});" >> ~/.jupyter/custom/custom.js
+mv ~/WetAI_Terra_Docker/Code/Set_Interface.js ~/.jupyter/custom/
 
 # Create user's starting Apps & Files by downloading everything from github
 
