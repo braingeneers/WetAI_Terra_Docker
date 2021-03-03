@@ -22,21 +22,9 @@ conda update -y conda
 ### Install nb-extensiosn 
 #conda install -y -c conda-forge  rise.  # not visible dunno why
 jupyter nbextensions_configurator enable
-jupyter nbextension enable collapsible_headings/main
+for package in collapsible_headings/main notify/notify toc2/main codefolding/main hide_header/main hide_input_all/main table_beautifier/main codefolding/edit contrib_nbextensions_help_item/main python-markdown/main move_selected_cells/main splitcell/splitcell tree-filter/index; do jupyter nbextension enable $package; done;
 #jupyter nbextension enable help_panel/help_panel. # not visible, dunno why
-jupyter nbextension enable notify/notify
-jupyter nbextension enable toc2/main
 #jupyter nbextension enable varInspector/main # Cool but removes \tab autocomplete
-jupyter nbextension enable codefolding/main
-jupyter nbextension enable hide_header/main
-jupyter nbextension enable hide_input_all/main
-jupyter nbextension enable table_beautifier/main
-jupyter nbextension enable codefolding/edit
-jupyter nbextension enable contrib_nbextensions_help_item/main
-jupyter nbextension enable python-markdown/main
-jupyter nbextension enable move_selected_cells/main
-jupyter nbextension enable splitcell/splitcell
-jupyter nbextension enable tree-filter/index
 
 # Set Files from wet_io Github
 # Set custom.js file for WetAI javscript code
