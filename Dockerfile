@@ -82,11 +82,9 @@ ENV TF_CPP_MIN_LOG_LEVEL=3
 
 # Set Terra WetAI environment
 RUN git clone https://github.com/braingeneers/WetAI_Terra_Docker.git
+RUN git clone https://github.com/braingeneers/WetAI_Docker.git         # Download original WetAI docker because we use some of the files
 RUN cd ~/WetAI_Terra_Docker/Code && chmod +x Set_Computer.sh && ./Set_Computer.sh
 
-# Run each individual braingeneers code
-RUN git clone https://github.com/braingeneers/WetAI_Docker.git
-RUN cd ~/WetAI_Docker/Code/Users && chmod +x *.sh && for f in *.sh; do bash "$f" -H; done;
 
 
 #EXPOSE 80
