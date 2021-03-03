@@ -38,11 +38,6 @@ jupyter nbextension enable move_selected_cells/main
 jupyter nbextension enable splitcell/splitcell
 jupyter nbextension enable tree-filter/index
 
-# Install required python packages
-pip3 install PyGithub
-pip3 install timeago #pip install --upgrade google-cloud-datastore #pip install --upgrade firebase-admin
-pip3 install redis
-
 # Set Files from wet_io Github
 # Set custom.js file for WetAI javscript code
 sed -i '$d' ~/.jupyter/custom/custom.js
