@@ -48,7 +48,9 @@ mv ~/WetAI_Terra_Docker/Code/Set_Interface.js ~/.jupyter/custom/
 mv ~/WetAI_Docker/Welcome\ to\ WetAI.ipynb ~/
 
 # Create user's starting Apps & Files by downloading everything from github
-
+cd ~ && mkdir Apps Projects                   #<-- Create folders
+cd ~/Apps && mkdir  braingeneers
+cd ~/Apps/braingeneers && git clone https://github.com/braingeneers/Agora.git && git clone https://github.com/braingeneers/Learn_WetAI.git
 
 
 ############################################
@@ -71,4 +73,4 @@ apt-get -y install docker-ce docker-ce-cli containerd.io
 
 # Run each individual braingeneers code
 cd ~/WetAI_Docker/Code/Users && chmod +x *.sh && for f in *.sh; do bash "$f" -H; done;
-
+rm -rf ~/WetAI_Terra_Docker ~/WetAI_Docker                   #<-- remove previous folders
