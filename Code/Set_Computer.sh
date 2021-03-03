@@ -1,11 +1,16 @@
-
-
-######################
-# Wet AI Interface
-######################
 VERSION_NAME=v3.0.3
 # Set io's Version name in custom.js file
 sed -i "s/{VERSION_NAME}/$VERSION_NAME/g"  ~/WetAI_Terra_Docker/Code/Set_Interface.js
+
+# Reference Code: https://github.com/braingeneers/WetAI_Docker/blob/main/Code/Set_Computer.sh
+
+
+############################################
+############################################
+#.    Code From Original io
+############################################
+############################################
+
 
 #mkdir ~/.jupyter/custom && mv ~/WetAI_Docker/Code/Set_Interface.js ~/.jupyter/custom/custom.js 
 sed -i '$d' ~/.jupyter/custom/custom.js
@@ -18,11 +23,6 @@ mv ~/WetAI_Terra_Docker/Code/Set_Interface.js ~/.jupyter/custom/
 echo "c.NotebookApp.allow_root = True" >> ~/.jupyter/jupyter_notebook_config.py  
 
 
-######################
-######################
-# Old Code
-######################
-######################
 
 
 ### Generic Software Update
