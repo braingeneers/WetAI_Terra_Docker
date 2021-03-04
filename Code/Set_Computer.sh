@@ -18,7 +18,7 @@ echo "c.NotebookApp.allow_root = True" >> ~/.jupyter/jupyter_notebook_config.py
 apt update; apt-get install update; conda update -y conda
 
 ### Install nb-extensiosn 
-conda install -y -c conda-forge  rise.  # not visible dunno why
+conda install -y -c conda-forge  rise  # not visible dunno why
 conda install -y -c conda-forge jupyter_contrib_nbextensions
 conda install -y jupyterlab
 jupyter nbextensions_configurator enable
