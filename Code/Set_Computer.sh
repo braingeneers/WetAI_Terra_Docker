@@ -15,9 +15,7 @@ sed -i "s/{VERSION_NAME}/$VERSION_NAME/g"  ~/WetAI_Terra_Docker/Code/Set_Interfa
 echo "c.NotebookApp.allow_root = True" >> ~/.jupyter/jupyter_notebook_config.py  
 
 ### Generic Software Update
-apt update
-apt-get install update
-conda update -y conda
+apt update; apt-get install update; conda update -y conda
 
 ### Install nb-extensiosn 
 #conda install -y -c conda-forge  rise.  # not visible dunno why
