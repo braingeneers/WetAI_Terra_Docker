@@ -25,7 +25,7 @@ USER root
 #!!! Note: Terra said they installed Conda, but they didn't: https://github.com/DataBiosphere/terra-docker/tree/master/terra-jupyter-base
 
 ARG NB_USER="jupyter-user"
-ENV UID 1000
+ENV UID="1000"
 
 # ---- Miniforge installer ----
 # Default values can be overridden at build time
