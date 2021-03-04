@@ -20,6 +20,7 @@ apt update; apt-get install update; conda update -y conda
 ### Install nb-extensiosn 
 conda install -y -c conda-forge  rise.  # not visible dunno why
 conda install -y -c conda-forge jupyter_contrib_nbextensions
+conda install -y jupyterlab
 jupyter nbextensions_configurator enable
 for package in collapsible_headings/main notify/notify toc2/main codefolding/main hide_header/main hide_input_all/main table_beautifier/main codefolding/edit contrib_nbextensions_help_item/main python-markdown/main move_selected_cells/main splitcell/splitcell tree-filter/index; do jupyter nbextension enable $package; done;
 #jupyter nbextension enable help_panel/help_panel. # not visible, dunno why
