@@ -35,7 +35,7 @@ mv ~/WetAI_Terra_Docker/Code/Set_Interface.js ~/.jupyter/custom/
 # Welcome to WetAI file
 # Create user's starting Apps & Files by downloading everything from github
 mkdir ~/notebooks
-mv ~/notebooks/WetAI_Terra_Docker/Welcome\ to\ WetAI.ipynb ~/
+mv ~/WetAI_Terra_Docker/Welcome\ to\ WetAI.ipynb ~/notebooks/
 cd ~/notebooks && mkdir Apps Projects                   #<-- Create folders
 cd ~/notebooks/Apps && mkdir  braingeneers
 cd ~/notebooks/Apps/braingeneers && git clone https://github.com/braingeneers/Agora.git && git clone https://github.com/braingeneers/Learn_WetAI.git
