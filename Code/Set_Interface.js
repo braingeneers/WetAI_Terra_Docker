@@ -1,4 +1,4 @@
-/*
+
 
 // Make Scrolling Work on Ipad 
 var style = document.createElement("style"); 
@@ -38,7 +38,6 @@ if( document.getElementById("terminado-container") != null ){
 }
 
 
-*/
 
 
 // Change Notebook View
@@ -108,7 +107,7 @@ if( document.getElementById("notebook-container") != null ){
     head.appendChild(style_notebook);
 }
 
-/*
+
 // create "web view" button for notebooks
 if( $(IPython.toolbar.selector.concat(' > #web-view')).length == 0 ){
   IPython.toolbar.add_buttons_group([
@@ -150,4 +149,4 @@ if($(IPython.toolbar.selector.concat(' > #clean-view')).length == 0){
     // makes it look pretty
     document.getElementById("clean-view").getElementsByClassName("btn btn-default")[0].className="btn btn-danger"
 } 
-*/
+
