@@ -31,13 +31,14 @@ sed -i '$d' ~/.jupyter/custom/custom.js
 echo "  require(['custom/Set_Interface']);" >> ~/.jupyter/custom/custom.js
 echo "});" >> ~/.jupyter/custom/custom.js
 mv ~/WetAI_Terra_Docker/Code/Set_Interface.js ~/.jupyter/custom/
+# create notebooks folder for data and put fiels there
 # Welcome to WetAI file
-mv ~/WetAI_Terra_Docker/Welcome\ to\ WetAI.ipynb ~/
-
 # Create user's starting Apps & Files by downloading everything from github
-cd ~ && mkdir Apps Projects                   #<-- Create folders
-cd ~/Apps && mkdir  braingeneers
-cd ~/Apps/braingeneers && git clone https://github.com/braingeneers/Agora.git && git clone https://github.com/braingeneers/Learn_WetAI.git
+mkdir ~/notebooks
+mv ~/notebooks/WetAI_Terra_Docker/Welcome\ to\ WetAI.ipynb ~/
+cd ~/notebooks && mkdir Apps Projects                   #<-- Create folders
+cd ~/notebooks/Apps && mkdir  braingeneers
+cd ~/notebooks/Apps/braingeneers && git clone https://github.com/braingeneers/Agora.git && git clone https://github.com/braingeneers/Learn_WetAI.git
 
 
 
