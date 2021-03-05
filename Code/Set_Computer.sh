@@ -32,7 +32,7 @@ echo "  require(['custom/Set_Interface']);" >> ~/.jupyter/custom/custom.js
 echo "});" >> ~/.jupyter/custom/custom.js
 mv ~/WetAI_Terra_Docker/Code/Set_Interface.js ~/.jupyter/custom/
 # Welcome to WetAI file
-mv ~/WetAI_Docker/Welcome\ to\ WetAI.ipynb ~/
+mv ~/WetAI_Terra_Docker/Welcome\ to\ WetAI.ipynb ~/
 
 # Create user's starting Apps & Files by downloading everything from github
 cd ~ && mkdir Apps Projects                   #<-- Create folders
