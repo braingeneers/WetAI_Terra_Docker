@@ -92,4 +92,5 @@ RUN git clone https://github.com/braingeneers/WetAI_Docker.git         # Downloa
 #EXPOSE 80
 #EXPOSE 8888
 #CMD ["jupyter","notebook"]
-ENTRYPOINT ["/usr/local/bin/jupyter", "notebook"]
+#ENTRYPOINT ["/usr/local/bin/jupyter", "notebook"]
+ENTRYPOINT ["/opt/conda/bin/jupyter", "notebook"]
