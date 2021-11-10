@@ -87,11 +87,11 @@ WORKDIR /home/jupyter
 #RUN cd ~ && git clone https://github.com/braingeneers/WetAI_Docker.git         # Download original WetAI docker because we use some of the files
 
 #RUN cd ~/WetAI_Terra_Docker/Code && chmod +x Set_Computer.sh && ./Set_Computer.sh
-RUN echo "c.NotebookApp.allow_root = True" >> ~/.jupyter/jupyter_notebook_config.py  
+#RUN echo "c.NotebookApp.allow_root = True" >> ~/.jupyter/jupyter_notebook_config.py  
 
 
 #EXPOSE 80
 #EXPOSE 8888
 #CMD ["jupyter","notebook"]
 #ENTRYPOINT ["/usr/local/bin/jupyter", "notebook"]
-ENTRYPOINT ["/opt/conda/bin/jupyter", "notebook"]
+ENTRYPOINT ["/opt/conda/bin/jupyter", "notebook", "--allow-root"]
