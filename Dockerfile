@@ -1,6 +1,7 @@
 
 #FROM jupyter/tensorflow-notebook:latest
-FROM us.gcr.io/broad-dsp-gcr-public/terra-jupyter-python:1.0.2
+FROM us.gcr.io/broad-dsp-gcr-public/terra-jupyter-python:0.1.2
+# Old Version: us.gcr.io/broad-dsp-gcr-public/terra-jupyter-python:0.0.23
 
 # Last Used image: jupyter/tensorflow-notebook:feacdbfc2e89
 
