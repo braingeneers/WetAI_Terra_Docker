@@ -86,7 +86,7 @@ WORKDIR /home/jupyter
 RUN git clone https://github.com/braingeneers/WetAI_Terra_Docker.git
 RUN git clone https://github.com/braingeneers/WetAI_Docker.git         # Download original WetAI docker because we use some of the files
 
-RUN cd /home/jupyter/WetAI_Terra_Docker/Code && chmod +x Set_Computer.sh && ./Set_Computer.sh
+#RUN cd /home/jupyter/WetAI_Terra_Docker/Code && chmod +x Set_Computer.sh && ./Set_Computer.sh
 
 
 
