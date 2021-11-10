@@ -51,8 +51,8 @@ cd ~/notebooks/Apps/braingeneers && git clone https://github.com/braingeneers/Ag
 ############################################
 
 # These packages were installed in WetAI by default, but must be installed in Terra version
-pip3 install plotly==4.14.3
-pip3 install pandas
+#pip3 install plotly==4.14.3
+#pip3 install pandas
 
 
 ############################################
