@@ -16,4 +16,7 @@ docker run -it -p 8001:8000 --name terra-test  --user root --entrypoint /bin/bas
 ```
 docker run -it -p 8017:8000 --name terra-test   --entrypoint /bin/bash us.gcr.io/broad-dsp-gcr-public/terra-jupyter-python:1.0.2
 ```
-
+**Build Docker Image**
+```
+docker build --no-cache -t braingeneers/wetai:latest .  
+```
