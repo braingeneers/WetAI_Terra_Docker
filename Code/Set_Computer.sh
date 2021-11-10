@@ -65,14 +65,16 @@ pip3 install pandas
 pip install --upgrade git+https://github.com/braingeneers/braingeneerspy.git # install braingeneers python package
 
 ### Install Docker
-apt-get -y install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-apt-get update
-apt-get -y install docker-ce docker-ce-cli containerd.io
-#dockerd & #commented because command doesn't work here
-#service docker start # commented because command doesn't work
+#apt-get -y install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+#curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+#add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+#apt-get update
+#apt-get -y install docker-ce docker-ce-cli containerd.io
+
+# #dockerd & #commented because command doesn't work here
+# #service docker start # commented because command doesn't work
 
 # Run each individual braingeneers code
-cd ~/WetAI_Docker/Code/Users && chmod +x *.sh && for f in *.sh; do bash "$f" -H; done;
+# cd ~/WetAI_Docker/Code/Users && chmod +x *.sh && for f in *.sh; do bash "$f" -H; done;
+# commenting out while debugging
 rm -rf ~/WetAI_Terra_Docker ~/WetAI_Docker                   #<-- remove previous folders
