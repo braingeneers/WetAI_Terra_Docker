@@ -1,0 +1,25 @@
+# This is where I put code that I'm currently trying out:
+
+
+
+### Run Command
+docker run -it --name terra2-test1 -p 1111:8000 us.gcr.io/broad-dsp-gcr-public/terra-jupyter-python:1.0.3 
+
+
+### Dockerfile
+From us.gcr.io/broad-dsp-gcr-public/terra-jupyter-python:1.0.3
+
+USER root
+ENV USER root
+USER $USER
+ENV NOTEBOOK_DISABLE_ROOT=false
+
+ENV PIP_USER=false
+
+ENTRYPOINT ["/opt/conda/bin/jupyter", "notebook", "--allow-root"]
+
+
+### Build Docker
+docker build  -t pupster90/terra:test2 .  
+
+
