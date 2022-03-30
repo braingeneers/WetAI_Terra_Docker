@@ -24,6 +24,7 @@ RUN git clone https://github.com/braingeneers/WetAI_Docker.git         # Downloa
 #RUN echo "c.NotebookApp.allow_root = True" >> ~/.jupyter/jupyter_notebook_config.py  
 
 # Copied from Base image
+WORKDIR /home/jupyter
 #ENV USER jupyter
 #USER $USER
 #ENV PIP_USER=true
