@@ -1,21 +1,8 @@
 
-#FROM jupyter/tensorflow-notebook:latest
 FROM us.gcr.io/broad-dsp-gcr-public/terra-jupyter-python:1.0.4
-# Old Version: us.gcr.io/broad-dsp-gcr-public/terra-jupyter-python:0.0.23
-
-# Last Used image: jupyter/tensorflow-notebook:feacdbfc2e89
-
 USER root
 ENV PIP_USER=false
-#WORKDIR /home/jovyan
-
-
-
-#############################################################
-#############################################################
-#.              Code From Jupyter Dockerfiles
-#############################################################
-#############################################################
+WORKDIR /home/jovyan
 
 
 
@@ -25,10 +12,7 @@ ENV PIP_USER=false
 #############################################################
 #############################################################
 
-
-
-
-# David's Code (Check if necessary)
+# David's Code 
 ENV ENDPOINT_URL="https://s3.nautilus.optiputer.net"
 ENV S3_ENDPOINT="s3.nautilus.optiputer.net"
 ENV AWS_LOG_LEVEL=3
