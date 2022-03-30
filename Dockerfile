@@ -1,7 +1,7 @@
 
 FROM us.gcr.io/broad-dsp-gcr-public/terra-jupyter-python:1.0.4
-USER root
-ENV PIP_USER=false
+#USER root
+#ENV PIP_USER=false
 WORKDIR /home/jupyter
 
 #############################################################
