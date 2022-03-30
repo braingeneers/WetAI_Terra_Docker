@@ -4,8 +4,6 @@ USER root
 ENV PIP_USER=false
 WORKDIR /home/jupyter
 
-
-
 #############################################################
 #############################################################
 #.                        My Code
@@ -29,13 +27,7 @@ RUN cd ~ && git clone https://github.com/braingeneers/WetAI_Docker.git         #
 # Copied from Base image
 ENV USER jupyter
 USER $USER
-# We want pip to install into the user's dir when the notebook is running.
 ENV PIP_USER=true
-# Enable Intel oneDNN optimizatoin by default
 ENV TF_ENABLE_ONEDNN_OPTS=1
 
-#EXPOSE 80
-#EXPOSE 8888
-#CMD ["jupyter","notebook"]
 ENTRYPOINT ["/usr/local/bin/jupyter", "notebook"]
-#ENTRYPOINT ["/opt/conda/bin/jupyter", "notebook"] #, "--allow-root"]
