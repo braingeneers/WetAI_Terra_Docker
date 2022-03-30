@@ -12,7 +12,7 @@ sed -i "s/{VERSION_NAME}/$VERSION_NAME/g"  ~/WetAI_Terra_Docker/Code/Set_Interfa
 ############################################
 
 ### Setup Jupyter config file
-echo "c.NotebookApp.allow_root = True" >> ~/.jupyter/jupyter_notebook_config.py  
+#echo "c.NotebookApp.allow_root = True" >> ~/.jupyter/jupyter_notebook_config.py   # not using root
 
 ### Generic Software Update
 apt update; apt-get install update; conda update -y conda
