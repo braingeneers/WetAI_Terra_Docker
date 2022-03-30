@@ -83,7 +83,7 @@ ENV AWS_LOG_LEVEL=3
 ENV TF_CPP_MIN_LOG_LEVEL=3
 
 # Set Terra WetAI environment
-WORKDIR /home/jupyter
+#WORKDIR /home/jupyter
 #RUN cd ~ && git clone https://github.com/braingeneers/WetAI_Terra_Docker.git
 #RUN cd ~ && git clone https://github.com/braingeneers/WetAI_Docker.git         # Download original WetAI docker because we use some of the files
 
