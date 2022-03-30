@@ -24,7 +24,7 @@ RUN cd WetAI_Terra_Docker/Code && chmod +x Set_Computer.sh && ./Set_Computer.sh
 #RUN echo "c.NotebookApp.allow_root = True" >> ~/.jupyter/jupyter_notebook_config.py  
 
 # Copied from Base image
-WORKDIR /home/jupyter
+USER jupyter
 #ENV USER jupyter
 #USER $USER
 #ENV PIP_USER=true
