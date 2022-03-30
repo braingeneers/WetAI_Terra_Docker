@@ -101,5 +101,5 @@ ENV TF_ENABLE_ONEDNN_OPTS=1
 #EXPOSE 80
 #EXPOSE 8888
 #CMD ["jupyter","notebook"]
-#ENTRYPOINT ["/usr/local/bin/jupyter", "notebook"]
-ENTRYPOINT ["/opt/conda/bin/jupyter", "notebook", "--allow-root"]
+ENTRYPOINT ["/usr/local/bin/jupyter", "notebook"]
+#ENTRYPOINT ["/opt/conda/bin/jupyter", "notebook"] #, "--allow-root"]
