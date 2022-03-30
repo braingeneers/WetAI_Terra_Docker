@@ -18,6 +18,7 @@ ENV TF_CPP_MIN_LOG_LEVEL=3
 
 # Set Terra WetAI environment
 WORKDIR /home/jupyter
+RUN mkdir -p /home/jupyter/testit
 RUN cd /home/jupyter && touch test
 RUN cd /home/jupyter && git clone https://github.com/braingeneers/WetAI_Terra_Docker.git
 RUN cd /home/jupyter && git clone https://github.com/braingeneers/WetAI_Docker.git         # Download original WetAI docker because we use some of the files
@@ -26,9 +27,9 @@ RUN cd /home/jupyter && git clone https://github.com/braingeneers/WetAI_Docker.g
 #RUN echo "c.NotebookApp.allow_root = True" >> ~/.jupyter/jupyter_notebook_config.py  
 
 # Copied from Base image
-ENV USER jupyter
-USER $USER
-ENV PIP_USER=true
-ENV TF_ENABLE_ONEDNN_OPTS=1
+#ENV USER jupyter
+#USER $USER
+#ENV PIP_USER=true
+#ENV TF_ENABLE_ONEDNN_OPTS=1
 
 ENTRYPOINT ["/opt/conda/bin/jupyter", "notebook"]
