@@ -30,4 +30,4 @@ USER $USER
 ENV PIP_USER=true
 ENV TF_ENABLE_ONEDNN_OPTS=1
 
-ENTRYPOINT ["/usr/local/bin/jupyter", "notebook"]
+ENTRYPOINT ["/opt/conda/bin/jupyter", "notebook"]
