@@ -17,8 +17,8 @@ sed -i "s/{VERSION_NAME}/$VERSION_NAME/g"  ~/WetAI_Terra_Docker/Code/Set_Interfa
 # conda install -y -c conda-forge  rise  #conda install -y jupyterlab # removed because never used 
 conda install -y -c conda-forge jupyter_contrib_nbextensions
 jupyter nbextensions_configurator enable
-for package in collapsible_headings/main notify/notify toc2/main codefolding/main hide_header/main hide_input_all/main table_beautifier/main codefolding/edit contrib_nbextensions_help_item/main python-markdown/main move_selected_cells/main help_panel/help_panel splitcell/splitcell tree-filter/index; do jupyter nbextension enable $package; done;
-#jupyter nbextension enable varInspector/main # Cool but removes \tab autocomplete
+for package in collapsible_headings/main varInspector/main notify/notify toc2/main codefolding/main hide_header/main hide_input_all/main table_beautifier/main codefolding/edit contrib_nbextensions_help_item/main python-markdown/main move_selected_cells/main help_panel/help_panel splitcell/splitcell tree-filter/index; do jupyter nbextension enable $package; done;
+
 
 # Set Files from wet_io Github
 # Set custom.js file for WetAI javscript code
