@@ -22,7 +22,7 @@ for package in collapsible_headings/main varInspector/main notify/notify toc2/ma
 
 # Set Files from wet_io Github
 # Set custom.js file for WetAI javscript code
-sed -i '$d' ~/.jupyter/custom/custom.js
+sed -i '$d' $JUPYTER_HOME/custom/custom.js
 echo "  require(['custom/Set_Interface']);" >> ~/.jupyter/custom/custom.js
 echo "});" >> ~/.jupyter/custom/custom.js
 mv ~/WetAI_Terra_Docker/Code/Set_Interface.js ~/.jupyter/custom/
