@@ -1,7 +1,6 @@
 VERSION_NAME=v4.0.2
 # Set io's Version name in custom.js file
 sed -i "s/{VERSION_NAME}/$VERSION_NAME/g"  ~/WetAI_Terra_Docker/Code/Set_Interface.js
-
 # Reference Code: https://github.com/braingeneers/WetAI_Docker/blob/main/Code/Set_Computer.sh
 
 
@@ -11,14 +10,11 @@ sed -i "s/{VERSION_NAME}/$VERSION_NAME/g"  ~/WetAI_Terra_Docker/Code/Set_Interfa
 ############################################
 ############################################
 
-### Setup Jupyter config file
-#echo "c.NotebookApp.allow_root = True" >> ~/.jupyter/jupyter_notebook_config.py   # not using root
-
 ### Generic Software Update
-apt update; apt-get install update; conda update -y conda
+#apt update; apt-get install update; conda update -y conda
 
 ### Install nb-extensiosn 
-conda install -y -c conda-forge  rise  # not visible dunno why
+# conda install -y -c conda-forge  rise  # removed because never used
 conda install -y -c conda-forge jupyter_contrib_nbextensions
 conda install -y jupyterlab
 jupyter nbextensions_configurator enable
