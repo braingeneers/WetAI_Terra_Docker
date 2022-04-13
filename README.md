@@ -20,3 +20,7 @@ docker run -it -p 8017:8000 --name terra-test   --entrypoint /bin/bash us.gcr.io
 ```
 docker build --no-cache -t braingeneers/wetai:latest .  
 ```
+**Remove Local Changes**
+```
+git checkout -- .
+```
