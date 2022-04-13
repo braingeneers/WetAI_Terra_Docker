@@ -24,3 +24,9 @@ docker build --no-cache -t braingeneers/wetai:latest .
 ```
 git checkout -- .
 ```
+**Remove Unused Images**
+This command cleans up your `docker images` envirnonent [link here](https://stackoverflow.com/questions/33913020/docker-remove-none-tag-images). 
+```
+docker image prune
+```
+
