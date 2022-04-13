@@ -1,4 +1,4 @@
-#test4
+#test5
 
 # Set Version Name
 #   Reference Code: https://github.com/braingeneers/WetAI_Docker/blob/main/Code/Set_Computer.sh
@@ -16,10 +16,10 @@ for package in collapsible_headings/main varInspector/main notify/notify toc2/ma
 #    https://github.com/DataBiosphere/terra-docker/blob/master/terra-jupyter-base/custom/extension_entry_jupyter.js
 #    https://github.com/DataBiosphere/terra-docker/blob/master/terra-jupyter-base/Dockerfile
 
-#sed -i '$d' $JUPYTER_HOME/custom/extension_entry_jupyter.js
-#echo "  require(['custom/Set_Interface']);" >> $JUPYTER_HOME/custom/extension_entry_jupyter.js
-#echo "});" >> $JUPYTER_HOME/custom/extension_entry_jupyter.js
-#mv /home/WetAI_Terra_Docker/Code/Set_Interface.js $JUPYTER_HOME/custom/
+sed -i '$d' $JUPYTER_HOME/custom/extension_entry_jupyter.js
+echo "  require(['custom/Set_Interface']);" >> $JUPYTER_HOME/custom/extension_entry_jupyter.js
+echo "});" >> $JUPYTER_HOME/custom/extension_entry_jupyter.js
+mv /home/WetAI_Terra_Docker/Code/Set_Interface.js $JUPYTER_HOME/custom/
 
 
 # Code used by all braingeneers
