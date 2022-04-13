@@ -1,5 +1,5 @@
 
-# Test3
+# test4
 FROM us.gcr.io/broad-dsp-gcr-public/terra-jupyter-python:1.0.4
 USER root
 #ENV PIP_USER=false
@@ -20,6 +20,9 @@ ENV TF_CPP_MIN_LOG_LEVEL=3
 # Set Terra WetAI environment
 RUN cd /home && git clone https://github.com/braingeneers/WetAI_Terra_Docker.git
 RUN cd /home && git clone https://github.com/braingeneers/WetAI_Docker.git         # Download original WetAI docker because we use some of the files
+
+
+
 #RUN cd /home && ls
 #RUN cd /home/WetAI_Terra_Docker/Code && chmod +x Set_Computer.sh && ./Set_Computer.sh
 
