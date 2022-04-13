@@ -21,7 +21,10 @@ for package in collapsible_headings/main varInspector/main notify/notify toc2/ma
 
 
 # Set Files from wet_io Github
-# Set custom.js file for WetAI javscript code
+# Set custom.js file for WetAI javscript code -- It took work to figure out where to put these files
+# Check out the docker link for the Terra base image to see where they put files
+# https://github.com/DataBiosphere/terra-docker/blob/master/terra-jupyter-base/custom/extension_entry_jupyter.js
+# https://github.com/DataBiosphere/terra-docker/blob/master/terra-jupyter-base/Dockerfile
 sed -i '$d' $JUPYTER_HOME/custom/custom.js
 echo "  require(['custom/Set_Interface']);" >> ~/.jupyter/custom/custom.js
 echo "});" >> ~/.jupyter/custom/custom.js
