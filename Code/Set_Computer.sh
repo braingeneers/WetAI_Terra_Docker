@@ -28,15 +28,16 @@ for package in collapsible_headings/main varInspector/main notify/notify toc2/ma
 sed -i '$d' $JUPYTER_HOME/custom/extension_entry_jupyter.js
 echo "  require(['custom/Set_Interface']);" >> $JUPYTER_HOME/custom/extension_entry_jupyter.js
 echo "});" >> $JUPYTER_HOME/custom/extension_entry_jupyter.js
-mv ~/WetAI_Terra_Docker/Code/Set_Interface.js $JUPYTER_HOME/custom/
+mv /temp/WetAI_Terra_Docker/Code/Set_Interface.js $JUPYTER_HOME/custom/
 # create notebooks folder for data and put fiels there
+
 # Welcome to WetAI file
 # Create user's starting Apps & Files by downloading everything from github
-mkdir ~/notebooks
-mv ~/WetAI_Terra_Docker/Welcome\ to\ WetAI.ipynb ~/notebooks/
-cd ~/notebooks && mkdir Apps Projects                   #<-- Create folders
-cd ~/notebooks/Apps && mkdir  braingeneers
-cd ~/notebooks/Apps/braingeneers && git clone https://github.com/braingeneers/Agora.git && git clone https://github.com/braingeneers/Learn_WetAI.git
+#mkdir ~/notebooks
+#mv ~/WetAI_Terra_Docker/Welcome\ to\ WetAI.ipynb ~/notebooks/
+#cd ~/notebooks && mkdir Apps Projects                   #<-- Create folders
+#cd ~/notebooks/Apps && mkdir  braingeneers
+#cd ~/notebooks/Apps/braingeneers && git clone https://github.com/braingeneers/Agora.git && git clone https://github.com/braingeneers/Learn_WetAI.git
 
 
 
@@ -75,4 +76,4 @@ pip install --upgrade git+https://github.com/braingeneers/braingeneerspy.git # i
 # Run each individual braingeneers code
 # cd ~/WetAI_Docker/Code/Users && chmod +x *.sh && for f in *.sh; do bash "$f" -H; done;
 # commenting out while debugging
-rm -rf ~/WetAI_Terra_Docker ~/WetAI_Docker                   #<-- remove previous folders
+#rm -rf ~/WetAI_Terra_Docker ~/WetAI_Docker                   #<-- remove previous folders
