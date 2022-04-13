@@ -1,6 +1,6 @@
 VERSION_NAME=v4.0.2
 # Set io's Version name in custom.js file
-sed -i "s/{VERSION_NAME}/$VERSION_NAME/g"  ~/WetAI_Terra_Docker/Code/Set_Interface.js
+sed -i "s/{VERSION_NAME}/$VERSION_NAME/g"  /temp/WetAI_Terra_Docker/Code/Set_Interface.js
 # Reference Code: https://github.com/braingeneers/WetAI_Docker/blob/main/Code/Set_Computer.sh
 
 
