@@ -25,10 +25,10 @@ for package in collapsible_headings/main varInspector/main notify/notify toc2/ma
 # Check out the docker link for the Terra base image to see where they put files
 # https://github.com/DataBiosphere/terra-docker/blob/master/terra-jupyter-base/custom/extension_entry_jupyter.js
 # https://github.com/DataBiosphere/terra-docker/blob/master/terra-jupyter-base/Dockerfile
-sed -i '$d' $JUPYTER_HOME/custom/custom.js
-echo "  require(['custom/Set_Interface']);" >> ~/.jupyter/custom/custom.js
-echo "});" >> ~/.jupyter/custom/custom.js
-mv ~/WetAI_Terra_Docker/Code/Set_Interface.js ~/.jupyter/custom/
+sed -i '$d' $JUPYTER_HOME/custom/extension_entry_jupyter.js
+echo "  require(['custom/Set_Interface']);" >> $JUPYTER_HOME/custom/extension_entry_jupyter.js
+echo "});" >> $JUPYTER_HOME/custom/extension_entry_jupyter.js
+mv ~/WetAI_Terra_Docker/Code/Set_Interface.js $JUPYTER_HOME/custom/
 # create notebooks folder for data and put fiels there
 # Welcome to WetAI file
 # Create user's starting Apps & Files by downloading everything from github
