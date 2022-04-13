@@ -1,6 +1,6 @@
 VERSION_NAME=v4.0.2
 # Set io's Version name in custom.js file
-sed -i "s/{VERSION_NAME}/$VERSION_NAME/g"  /temp/WetAI_Terra_Docker/Code/Set_Interface.js
+sed -i "s/{VERSION_NAME}/$VERSION_NAME/g"  /home/WetAI_Terra_Docker/Code/Set_Interface.js
 # Reference Code: https://github.com/braingeneers/WetAI_Docker/blob/main/Code/Set_Computer.sh
 
 
@@ -28,9 +28,9 @@ for package in collapsible_headings/main varInspector/main notify/notify toc2/ma
 sed -i '$d' $JUPYTER_HOME/custom/extension_entry_jupyter.js
 echo "  require(['custom/Set_Interface']);" >> $JUPYTER_HOME/custom/extension_entry_jupyter.js
 echo "});" >> $JUPYTER_HOME/custom/extension_entry_jupyter.js
-mv /temp/WetAI_Terra_Docker/Code/Set_Interface.js $JUPYTER_HOME/custom/
-# create notebooks folder for data and put fiels there
+mv /home/WetAI_Terra_Docker/Code/Set_Interface.js $JUPYTER_HOME/custom/
 
+# create notebooks folder for data and put fiels there
 # Welcome to WetAI file
 # Create user's starting Apps & Files by downloading everything from github
 #mkdir ~/notebooks
