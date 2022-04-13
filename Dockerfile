@@ -1,4 +1,5 @@
 
+# Test2
 FROM us.gcr.io/broad-dsp-gcr-public/terra-jupyter-python:1.0.4
 USER root
 #ENV PIP_USER=false
@@ -11,10 +12,10 @@ WORKDIR /home/jupyter
 #############################################################
 
 # David's Code 
-#ENV ENDPOINT_URL="https://s3.nautilus.optiputer.net"
-#ENV S3_ENDPOINT="s3.nautilus.optiputer.net"
-#ENV AWS_LOG_LEVEL=3
-#ENV TF_CPP_MIN_LOG_LEVEL=3
+ENV ENDPOINT_URL="https://s3.nautilus.optiputer.net"
+ENV S3_ENDPOINT="s3.nautilus.optiputer.net"
+ENV AWS_LOG_LEVEL=3
+ENV TF_CPP_MIN_LOG_LEVEL=3
 
 # Set Terra WetAI environment
 #RUN cd /home && git clone https://github.com/braingeneers/WetAI_Terra_Docker.git
