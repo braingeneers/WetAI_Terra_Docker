@@ -15,12 +15,13 @@ for package in collapsible_headings/main varInspector/main notify/notify toc2/ma
 #    Check out the docker link for the Terra base image to see where they put files
 #    https://github.com/DataBiosphere/terra-docker/blob/master/terra-jupyter-base/custom/extension_entry_jupyter.js
 #    https://github.com/DataBiosphere/terra-docker/blob/master/terra-jupyter-base/Dockerfile
-sed -i '$d' $JUPYTER_HOME/custom/extension_entry_jupyter.js
-echo "  require(['custom/Set_Interface']);" >> $JUPYTER_HOME/custom/extension_entry_jupyter.js
-echo "});" >> $JUPYTER_HOME/custom/extension_entry_jupyter.js
-mv /home/WetAI_Terra_Docker/Code/Set_Interface.js $JUPYTER_HOME/custom/
+
+#sed -i '$d' $JUPYTER_HOME/custom/extension_entry_jupyter.js
+#echo "  require(['custom/Set_Interface']);" >> $JUPYTER_HOME/custom/extension_entry_jupyter.js
+#echo "});" >> $JUPYTER_HOME/custom/extension_entry_jupyter.js
+#mv /home/WetAI_Terra_Docker/Code/Set_Interface.js $JUPYTER_HOME/custom/
 
 
 # Code used by all braingeneers
-pip install --upgrade git+https://github.com/braingeneers/braingeneerspy.git # install braingeneers python package
+#pip install --upgrade git+https://github.com/braingeneers/braingeneerspy.git # install braingeneers python package
 
