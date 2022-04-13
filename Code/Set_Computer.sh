@@ -23,59 +23,16 @@ for package in collapsible_headings/main varInspector/main notify/notify toc2/ma
 
 
 # Set Files from wet_io Github
-# Set custom.js file for WetAI javscript code -- It took work to figure out where to put these files
-# Check out the docker link for the Terra base image to see where they put files
-# https://github.com/DataBiosphere/terra-docker/blob/master/terra-jupyter-base/custom/extension_entry_jupyter.js
-# https://github.com/DataBiosphere/terra-docker/blob/master/terra-jupyter-base/Dockerfile
+#    Set custom.js file for WetAI javscript code -- It took work to figure out where to put these files
+#    Check out the docker link for the Terra base image to see where they put files
+#    https://github.com/DataBiosphere/terra-docker/blob/master/terra-jupyter-base/custom/extension_entry_jupyter.js
+#    https://github.com/DataBiosphere/terra-docker/blob/master/terra-jupyter-base/Dockerfile
 sed -i '$d' $JUPYTER_HOME/custom/extension_entry_jupyter.js
 echo "  require(['custom/Set_Interface']);" >> $JUPYTER_HOME/custom/extension_entry_jupyter.js
 echo "});" >> $JUPYTER_HOME/custom/extension_entry_jupyter.js
 mv /home/WetAI_Terra_Docker/Code/Set_Interface.js $JUPYTER_HOME/custom/
 
-# create notebooks folder for data and put fiels there
-# Welcome to WetAI file
-# Create user's starting Apps & Files by downloading everything from github
-#mkdir ~/notebooks
-#mv ~/WetAI_Terra_Docker/Welcome\ to\ WetAI.ipynb ~/notebooks/
-#cd ~/notebooks && mkdir Apps Projects                   #<-- Create folders
-#cd ~/notebooks/Apps && mkdir  braingeneers
-#cd ~/notebooks/Apps/braingeneers && git clone https://github.com/braingeneers/Agora.git && git clone https://github.com/braingeneers/Learn_WetAI.git
-
-
-
-
-
-############################################
-############################################
-#.    Additional Installations for Terra
-############################################
-############################################
-
-# These packages were installed in WetAI by default, but must be installed in Terra version
-#pip3 install plotly==4.14.3
-#pip3 install pandas
-
-
-############################################
-############################################
-#.    Braingeneers
-############################################
-############################################
 
 # Code used by all braingeneers
 pip install --upgrade git+https://github.com/braingeneers/braingeneerspy.git # install braingeneers python package
 
-### Install Docker
-#apt-get -y install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
-#curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-#add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-#apt-get update
-#apt-get -y install docker-ce docker-ce-cli containerd.io
-
-# #dockerd & #commented because command doesn't work here
-# #service docker start # commented because command doesn't work
-
-# Run each individual braingeneers code
-# cd ~/WetAI_Docker/Code/Users && chmod +x *.sh && for f in *.sh; do bash "$f" -H; done;
-# commenting out while debugging
-#rm -rf ~/WetAI_Terra_Docker ~/WetAI_Docker                   #<-- remove previous folders
