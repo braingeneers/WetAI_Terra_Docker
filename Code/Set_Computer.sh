@@ -1,26 +1,14 @@
 test4
 
+# Set Version Name
+#   Reference Code: https://github.com/braingeneers/WetAI_Docker/blob/main/Code/Set_Computer.sh
 VERSION_NAME=v4.0.2
-# Set io's Version name in custom.js file
 sed -i "s/{VERSION_NAME}/$VERSION_NAME/g"  /home/WetAI_Terra_Docker/Code/Set_Interface.js
-# Reference Code: https://github.com/braingeneers/WetAI_Docker/blob/main/Code/Set_Computer.sh
-
-
-############################################
-############################################
-#.    Code From Original io
-############################################
-############################################
-
-### Generic Software Update
-#apt update; apt-get install update; conda update -y conda
 
 ### Install nb-extensiosn 
-# conda install -y -c conda-forge  rise  #conda install -y jupyterlab # removed because never used 
 conda install -y -c conda-forge jupyter_contrib_nbextensions
 jupyter nbextensions_configurator enable
 for package in collapsible_headings/main varInspector/main notify/notify toc2/main codefolding/main hide_header/main hide_input_all/main table_beautifier/main codefolding/edit contrib_nbextensions_help_item/main python-markdown/main move_selected_cells/main help_panel/help_panel splitcell/splitcell tree-filter/index; do jupyter nbextension enable $package; done;
-
 
 # Set Files from wet_io Github
 #    Set custom.js file for WetAI javscript code -- It took work to figure out where to put these files
