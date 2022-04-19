@@ -10,7 +10,7 @@ This is the version of WetAI that runs on Terra. This project is still in develo
 ## Docker Commands
 **Run Command**
 ```
-docker run -it -p 8001:8000 --name terra-test  --entrypoint /bin/bash braingeneers/wetai:v3.0.0
+docker run -it -p 8001:8000 --name terra-test  --entrypoint /bin/bash wetai:v_whatever
 ```
 **Run Original Image**
 ```
